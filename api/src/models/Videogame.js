@@ -19,14 +19,14 @@ module.exports = (sequelize) => {
       allowNull: false,
     },
     platforms: {
-      type: DataType.VARCHAR(255),
+      type: DataTypes.VARCHAR(255),
       allowNull: false,
     },
     img: {
-      type: DataType.STRING,
+      type: DataTypes.STRING,
     },
     released: {
-      type: DataType.DATE,
+      type: DataTypes.DATE,
       allowNull: false,
     },
     rating: {
@@ -34,7 +34,7 @@ module.exports = (sequelize) => {
       allowNull: false,
       validate: {
         min: 0,
-        max: 10,
+        max: 5,
       },
     },
 
